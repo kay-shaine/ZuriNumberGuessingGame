@@ -1,6 +1,6 @@
 console.log("               Zuri Number Guessing Game");
 console.log("A number guessing game thats generate a number between the range of 1 and another number and prompts the user to guess the number and move to next stage with the right guess.");
-console.log('')
+console.log('');
 
 const randomRange = range => {
   return Math.floor(Math.random() * range) + 1;
