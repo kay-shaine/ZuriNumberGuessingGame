@@ -11,9 +11,10 @@ let userName = prompt('Enter your username: ');
 console.log(`Welcome to Zuri Number Guessing Game ${userName} `);
 
 let rangeIncrease = 2;
+let result = randomRange(rangeIncrease);
 let stage = 1;
 let points = 0;
-let result = randomRange(rangeIncrease);
+
 
 
 let userGuess = prompt(`Guess between is 1 to ${rangeIncrease} for stage One: `);
@@ -21,7 +22,7 @@ let userGuess = prompt(`Guess between is 1 to ${rangeIncrease} for stage One: `)
 
 while(true){
   if(parseInt(userGuess) !== result){
-    console.log(`Sorry. Your guess was wrong.\nYou finished at Level ${stage} with ${points} point(s). Try again!`);
+    console.log(`Sorry. Your guess was wrong.\nYou finished at Stage ${stage} with ${points} point. Try again!`);
     console.log('Please refresh to restart  the game.')
     break;
   }
